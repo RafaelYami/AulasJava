@@ -1,0 +1,18 @@
+package entities;
+
+public class Conta {
+	
+	public String titularDaConta;
+	public int numeroConta;
+	public int agencia;
+	public double saldo;
+	
+	public Conta() {
+		
+	}
+	
+	public Conta(String titular) {
+		this.titularDaConta = titular;
+	}
+
+}

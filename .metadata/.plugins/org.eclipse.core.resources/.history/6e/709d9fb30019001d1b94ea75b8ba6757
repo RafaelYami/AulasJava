@@ -1,0 +1,38 @@
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class SegundoGrau {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		
+		double a;
+		double b;
+		double c;
+		
+		System.out.print("Digite o número que substituirá a letra 'a': ");
+		a = sc.nextDouble();
+		
+		System.out.print("Digite o número que substituirá a letra 'b': ");
+		b = sc.nextDouble();
+		
+		System.out.print("Digite o número que substituirá a letra 'c': ");
+		c = sc.nextDouble();
+		
+		System.out.println(equacao(a, b, c));
+		
+		sc.close();
+
+	}
+	public static String equacao(double a, double b, double c) {
+		
+		double delta = b * b - 4 * a * c;
+		double x1 = (- b + Math.sqrt(delta)) / 2 * a;
+		double x2 = (- b - Math.sqrt(delta)) / 2 * a;
+		
+		return "x¹ igual a: " + x1 + ". x² igual a: " + x2;
+	}
+
+}

@@ -1,0 +1,8 @@
+package entities;
+
+public class Viloes {
+	private String identidadeSecreta;
+	private String nomeDeVilao;
+	private ArrayList<String> poderes;
+
+}

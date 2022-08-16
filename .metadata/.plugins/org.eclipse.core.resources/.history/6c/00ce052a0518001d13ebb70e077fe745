@@ -1,0 +1,27 @@
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioArrayMatriz {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		
+		double[] nota = new double[4];
+		double media = 0.0;
+		
+		for(int i = 0; i < nota.length; i++) {
+			System.out.print("Digite a nota: ");
+			nota[i] = sc.nextDouble();
+		}
+		
+		media = (nota[0] + nota[1] + nota[2] + nota[3]) / nota.length;
+		
+		System.out.printf("A média é: %.2f", media);
+		
+		sc.close();
+
+	}
+
+}

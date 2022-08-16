@@ -1,0 +1,33 @@
+package program;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		
+		Conta conta = new Conta();
+		
+		System.out.println("Digite o número da conta: ");
+		
+		
+		System.out.println("Digite o titular: ");
+		
+		
+		System.out.println("Digite a agência: ");
+		
+		
+		System.out.println("Digite o saldo: ");
+		conta.saldo = 25.5;
+        
+		
+		
+		
+		sc.close();
+	}
+
+}

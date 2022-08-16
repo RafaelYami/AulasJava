@@ -1,0 +1,19 @@
+package aulas;
+
+public class IntroducaoFuncao {
+
+	public static void main(String[] args) {
+		
+		/*
+		System.out.println(Math.sqrt(81));
+		System.out.println(Math.PI);
+		*/
+
+		ImprimeNome();
+		
+	}
+	public static void ImprimeNome() {
+		System.out.println("Meu nome é Rafael!");
+	}
+
+}

@@ -1,0 +1,34 @@
+package program;
+
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Herois;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		ArrayList<String> superPoderes = new ArrayList<>();
+		
+		Herois heroi = new Herois();
+		
+		char option;
+		
+		System.out.print("Digite o nome do herói: ");
+		heroi.setNomeDeHeroi(sc.nextLine());
+		
+		System.out.print("Digite a identidade secreta do herói: ");
+		heroi.setIdentidadeSecreta(sc.nextLine());
+		
+		System.out.print("Digite o universo ao qual ele pertence(Marvel, DC...etc): ");
+		heroi.setUniversoPertence(sc.nextLine());
+		
+		System.out.print("Pertence a algum grupo ou liga?");
+		heroi.setPertenceAoGrupoLiga(sc.nextLine());
+		if()
+
+	}
+
+}

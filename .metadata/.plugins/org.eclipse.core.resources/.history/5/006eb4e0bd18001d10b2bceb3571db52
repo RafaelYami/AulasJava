@@ -1,0 +1,55 @@
+package aulas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioFuncoes {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+
+		int idade = 0;
+		char sexo;
+		double peso = 0;
+		double altura = 0;
+
+		System.out.print("Digite a idade: ");
+		idade = sc.nextInt();
+		System.out.print("Digite o sexo: ");
+		sexo = sc.next().charAt(0);
+		System.out.print("Digite o peso: ");
+		peso = sc.nextDouble();
+		System.out.print("Digite a altura: ");
+		altura = sc.nextDouble();
+
+		System.out.print(CalcularIMC(altura, peso));
+
+		System.out.print(ResultadoIMC());
+
+		sc.close();
+	}
+
+	public static String CalcularIMC(double a, double p) {
+
+		double imc = (p / (a * a));
+
+		return "O IMC é: " + imc;
+	}
+
+	public static void ResultadoIMC(double r) {
+		
+		if(r < 18.5) {
+			System.out.println("Você está abaixo do peso!");
+		}else if(r > 18.5 && r < 24.9) {
+			System.out.println("Seu peso está ideal!");
+		}else if(r > 25.0 && r < 29.9) {
+			System.out.println("Você está sobrepeso!");
+		}else if(r > 30.0 && r < 39.9) {
+			System.out.println("Você está em obesidade!");
+		}else(r > 40.0){
+			System.out.println("Você está em obesidade grave!");
+		}
+		
+	}
+
+}
